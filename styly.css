@@ -6,10 +6,6 @@ body {
   background: linear-gradient(#615dad, #ffc8da);
 }
 
-.intro__heading {
-  font-family: 'Lobster', cursive;
-}
-
 .intro {
   width: 100%;
   max-width: 350px;
@@ -19,18 +15,24 @@ body {
   color: white;
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
   overflow: hidden;
-  }
+}
 
 .intro__img {
- width: 100%;
- }
+  max-width: 100%;
+}
 
 .intro__discription {
   background-color: #283e50;
   text-align: center;
   padding: 15px;
+  font-family: Arial, sans-serif;
+}
+
+.intro__heading {
+  font-family: 'Lobster', cursive;
 }
 
 a {
@@ -42,10 +44,13 @@ a {
   height: 50px;
   text-decoration: inherit;
   color: white;
+  border: none;
+  font-size: 1rem;
 }
 
 .intro__button--rules {
   background-color: #1fcca4;
+  border-bottom: 1px solid black;
 }
 
 .intro__button--rules:hover {
