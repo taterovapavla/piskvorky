@@ -64,3 +64,89 @@ a {
 .intro__button--start:hover {
   background-color: #0090e9;
 }
+
+.game {
+  display: flex;
+  flex-direction: column;
+  max-width: 80vmin;
+  margin: auto;
+}
+
+.game__heading {
+  font-family: 'Lobster', cursive;
+  color: white;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: normal;
+  margin: 10px auto;
+}
+
+.game__navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: Arial, sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.game__player {
+  display: flex;
+  gap: 10px;
+}
+
+.game__buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.game__button {
+  border: none;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+.game__button--home {
+  background-color: #1fcca4;
+}
+
+.game__button--home:hover {
+  background-color: #1cbb96;
+}
+
+.game__button--restart {
+  background-color: #0197f6;
+}
+
+.game__button--restart:hover {
+  background-color: #0090e9;
+}
+
+.game__area {
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+  grid-template-rows: repeat(10, auto);
+  background-color: transparent;
+  border: 1px solid black;
+  margin: 10px 0px;
+  
+}
+
+.game__field {
+    min-height: calc(80vmin/10);
+    min-width: auto;
+    background-color: #fad9e4;
+    opacity: 60%;
+    border: 1px solid black;
+}
+
+.game__field:hover {
+  background-color: #f9edf3;
+}
+
+.game__field:focus {
+  background-color: #f9edf3;
+}
+
