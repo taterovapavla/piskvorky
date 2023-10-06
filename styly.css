@@ -4,16 +4,18 @@
 
 body {
   background: linear-gradient(#615dad, #ffc8da);
+  height: 100vh;
+  margin: 0;
 }
 
 .intro {
+  height: 100%;
   width: 100%;
   max-width: 350px;
   margin: auto;
-  margin-top: 70px;
-  margin-bottom: 100px;
   color: white;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
@@ -127,7 +129,6 @@ a {
 .game__area {
   display: grid;
   grid-template-columns: repeat(10, auto);
-  grid-template-rows: repeat(10, auto);
   background-color: transparent;
   border: 1px solid black;
   margin: 10px 0px;
@@ -140,6 +141,7 @@ a {
     background-color: #fad9e4;
     opacity: 60%;
     border: 1px solid black;
+    cursor: pointer;
 }
 
 .game__field:hover {
@@ -148,5 +150,26 @@ a {
 
 .game__field:focus {
   background-color: #f9edf3;
+}
+
+.game__field--circle {
+  background-image: url(./podklady/circle-black.svg);
+  background-repeat: no-repeat ;
+  background-position: center;
+  max-width: 100%;
+}
+
+.game__field--cross {
+  background-image: url(./podklady/cross-black.svg);
+  background-repeat: no-repeat ;
+  background-position: center;
+  max-width: 100%;
+}
+
+.game__cross {
+  background-image: url(./podklady/cross.svg);
+  background-repeat: no-repeat ;
+  background-position: center;
+  max-width: 100%;
 }
 
