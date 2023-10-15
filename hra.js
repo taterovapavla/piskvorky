@@ -1,3 +1,5 @@
+import { findWinner } from "https://unpkg.com/piskvorky@0.1.4";
+
 let currentPlayer = "circle";
 
 const circleElement = document.querySelector(".game__circle");
@@ -35,8 +37,28 @@ const changeNextPlayer = () => {
   }
 };
 
+const checkWinner = () => {
+  const herniPole = [];
+  ButtonsElement.forEach((button) => {
+    if (button.classList.contains("game__field--circle")) {
+      herniPole.push("o");
+    } else if (button.classList.contains("game__field--cross")) {
+      herniPole.push("x");
+    } else {
+      herniPole.push("_");
+    }
+  });
+
+  const vitez = findWinner(herniPole);
+  if (vitez === "o" || vitez === "x") {
+    alert(`Vyhrál hráč se symbolem ${vitez}.`); // Vyhrál hráč se symbolem o.
+    location.reload();
+  }
+};
+
 ButtonsElement.forEach((button) => {
   button.addEventListener("click", changeClass);
   button.addEventListener("click", changePlayer);
   button.addEventListener("click", changeNextPlayer);
+  button.addEventListener("click", checkWinner);
 });

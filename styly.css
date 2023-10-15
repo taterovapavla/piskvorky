@@ -4,6 +4,7 @@
 
 body {
   background: linear-gradient(#615dad, #ffc8da);
+  background-attachment: fixed;
   height: 100vh;
   margin: 0;
 }
@@ -136,8 +137,8 @@ a {
 }
 
 .game__field {
-    min-height: calc(80vmin/10);
-    min-width: auto;
+    width: calc(80vmin/10);
+    aspect-ratio: 1;
     background-color: #fad9e4;
     opacity: 60%;
     border: 1px solid black;
@@ -156,14 +157,15 @@ a {
   background-image: url(./podklady/circle-black.svg);
   background-repeat: no-repeat ;
   background-position: center;
-  max-width: 100%;
+  background-size: 75%;
 }
 
 .game__field--cross {
   background-image: url(./podklady/cross-black.svg);
   background-repeat: no-repeat ;
   background-position: center;
-  max-width: 100%;
+  background-size: 75%;
+
 }
 
 .game__cross {
