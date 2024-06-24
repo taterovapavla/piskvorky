@@ -1,20 +1,20 @@
-# Piškvorky
+# Tic-Tac-Toe
 
-Piškvorky je klasická hra, kterou jsem vytvořila v rámci účasti na Webové digitální akademii od Czechitas. Hra umožňuje dvěma hráčům soupeřit na herní desce a cílem je vytvořit řadu pěti stejných symbolů (křížků nebo koleček).
+Tic-Tac-Toe is a classic game I created as part of my participation in a Czechitas Web digital academy. The game allows two players to compete on a game board with the goal of creating a row of five identical symbols (crosses or circles).
 
 ## Demo
-Hru si můžete zahrát [zde](https://taterovapavla.github.io/piskvorky/index.html).
+You can play the game [here](https://taterovapavla.github.io/piskvorky/index.html).
 
-## Funkce
-- Dvouhráčský mód
-- Jednoduché a intuitivní rozhraní
-- Zobrazení aktuálního hráče
-- Detekce vítěze nebo remízy
+## Features
+- Two-player mode
+- Simple and intuitive interface
+- Display of the current player
+- Detection of winner or draw
 
-## Technologie
+## Technologies
 - HTML5
 - CSS3
 - JavaScript
 
-## Poděkování
-Děkuji Czechitas za poskytnutí příležitosti zúčastnit se Digitální akademie Web a podpory při tvorbě tohoto projektu.
+## Acknowledgements
+Thanks to Czechitas for providing the opportunity to participate in the Web Digital Academy and for supporting the creation of this project.
